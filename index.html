@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.png" />
+
+    <title>LevelUp</title>
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="logo">
+        <a href="#"><img src="icon.png" alt="Логотип"></a>
+    </div>
+
+    <nav class="nav">
+        <ul class="menu">
+            <li><a href="#">Пункт меню</a></li>
+            <li><a href="#">Пункт меню</a></li>
+            <li><a href="#">Пункт меню</a></li>
+            <li><a href="#">Пункт меню</a></li>
+           
+        </ul>
+    </nav>
+
+</header>
+
+<main>
+    <div class="container">
+
+        <div class="video-container">
+            <video class="video-background" autoplay muted loop>
+                <source src="ocean.mp4" type="video/mp4">
+            </video>
+            <div class="overlay"> </div>
+            <div class="content">
+                <h1>LevelUp</h1>
+                <div class="row">
+                    <div class="image">
+                        <img src="prod.png" alt="Изображение">
+                    </div>
+                    <div class="list">
+                        <ul>
+                            <li>«LevelUp». Продукт для повышения потенции.</li> 
+                            <li>«LevelUp». Продукт для повышения потенции.</li>
+                            <li>«LevelUp». Продукт для повышения потенции.</li>
+                        </ul>
+                    </div>
+                </div>
+                <a href="#order-form" class="order-button">Заказать</a>
+            </div>
+        </div>
+
+        <div class="product-section">
+            <div class="ingredient-column">
+                <div class="ingredient">
+                    <div class="circle">
+                        <img src="ing1.png" alt="Ингредиент 1">
+                    </div>
+                    <p>Ингредиент 1</p>
+                </div>
+                <div class="ingredient">
+                    <div class="circle">
+                        <img src="ing2.png" alt="Ингредиент 2">
+                    </div>
+                    <p>Ингредиент 2</p>
+                </div>
+                <div class="ingredient">
+                    <div class="circle">
+                        <img src="ing3.png" alt="Ингредиент 3">
+                    </div>
+                    <p>Ингредиент 3</p>
+                </div>
+            </div>
+
+            <div class="product-image">
+                <img src="prod.png" alt="Продукт">
+            </div>
+            
+            <div class="ingredient-column">
+                <div class="ingredient">
+                    <div class="circle">
+                        <img src="ing4.png" alt="Ингредиент 4">
+                    </div>
+                    <p>Ингредиент 4</p>
+                </div>
+                <div class="ingredient">
+                    <div class="circle">
+                        <img src="ing5.png" alt="Ингредиент 5">
+                    </div>
+                    <p>Ингредиент 5</p>
+                </div>
+                <div class="ingredient">
+                    <div class="circle">
+                        <img src="ing6.png" alt="Ингредиент 6">
+                    </div>
+                    <p>Ингредиент 6</p>
+                </div>
+            </div>
+        </div>
+        <div class="order-button-container">
+            <a href="#order-form" class="order-button order-button2">Заказать</a>
+        </div>
+
+
+        <div class="reviews-section">
+        <div class="carousel-container">
+            <div class="carousel-wrapper">
+            <div class="carousel">
+                <div class="carousel-item">
+                    <img src="person1.png" alt="Person 1">
+                    <h3>Person 1</h3>
+                    <p>This is a testimonial text from Person 1. This is a testimonial text from Person 1. 
+                        This is a testimonial text from Person 1. This is a testimonial text from Person 1.</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="person2.png" alt="Person 2">
+                    <h3>Person 2</h3>
+                    <p>This is a testimonial text from Person 2. This is a testimonial text from Person 2. 
+                        This is a testimonial text from Person 2. This is a testimonial text from Person 2.</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="person3.png" alt="Person 3">
+                    <h3>Person 3</h3>
+                    <p>This is a testimonial text from Person 3. This is a testimonial text from Person 3. 
+                        This is a testimonial text from Person 3. This is a testimonial text from Person 3.</p>
+                </div>
+            </div>
+        </div>
+            <button class="prev">Prev</button>
+            <button class="next">Next</button>
+        </div>
+
+    </div>
+
+    <div class="promo-block">
+        <div class="promo-content">
+            <div class="promo-image">
+                <img src="doctor.png" alt="Product Image">
+            </div>
+            <div class="promo-text">
+                <h2>Название продукта</h2>
+                <p>Краткое описание продукта здесь. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <ul>
+                    <li>Характеристика 1</li>
+                    <li>Характеристика 2</li>
+                    <li>Характеристика 3</li>
+                </ul>
+                <a href="#order-form" class="order-button order-button3">Заказать</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="order-form" id="order-form">
+        <div class="order-header">
+            <h2>LevelUp</h2>
+        </div>
+        <div class="product-details">
+            <img src="prod.png" alt="Product Image">
+            <div class="price">
+                <span class="old-price">Старая цена: <del>$99.99</del></span>
+                <span class="new-price animated">Новая цена: $79.99</span>
+            </div>
+            <div id="countdown"></div>
+        </div>
+        <form action="#" method="POST" class="order-form-fields" id="order-form">
+            <div class="input-group">
+                <input type="text" name="name" id="name" placeholder="Ваше имя">
+                <input type="tel" name="phone" id="phone" placeholder="Телефон" pattern="[0-9]+">
+            </div>
+            
+            <button type="submit" class="submit-button">Заказать сейчас</button>
+        </form>
+    </div>
+    
+
+
+
+</div>
+
+</main>
+
+
+<footer>
+
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script> 
+   $(document).ready(function() {
+    var currentIndex = 0;
+    var items = $('.carousel-item');
+    var itemCount = items.length;
+
+    function showItem(index) {
+        var newLeft = -index * 300 + 'px';
+        $('.carousel').css('transform', 'translateX(' + newLeft + ')');
+    }
+
+    $('.next').click(function() {
+        currentIndex = (currentIndex + 1) % itemCount;
+        showItem(currentIndex);
+    });
+
+    $('.prev').click(function() {
+        currentIndex = (currentIndex - 1 + itemCount) % itemCount;
+        showItem(currentIndex);
+    });
+});
+
+document.getElementById('order-form').addEventListener('submit', function(event) {
+    var phoneInput = document.getElementById('phone');
+    var phonePattern = /^[0-9]+$/;
+
+    if (!phonePattern.test(phoneInput.value)) {
+        event.preventDefault(); // Prevent form submission
+        alert('Please enter a valid phone number');
+    }
+});
+
+// Предотвращаем ввод букв в реальном времени
+document.getElementById('phone').addEventListener('input', function(event) {
+    var phoneInput = event.target;
+    phoneInput.value = phoneInput.value.replace(/[^0-9]/g, '');
+});
+
+// Countdown timer
+var countdown = 30 * 60; // 30 minutes
+var countdownInterval = setInterval(function() {
+    var minutes = Math.floor(countdown / 60);
+    var seconds = countdown % 60;
+
+    document.getElementById('countdown').textContent = minutes + ':' + (seconds < 10 ? '0' + seconds : seconds);
+
+    if (countdown <= 0) {
+        clearInterval(countdownInterval);
+        // Add code to handle the end of the countdown (e.g., disable the submit button)
+    }
+
+    countdown--;
+}, 1000);
+
+    </script>
+
+</body>
+</html>
